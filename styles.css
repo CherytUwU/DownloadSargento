@@ -94,10 +94,30 @@ main{
     border-radius: 5px;
 }
 
+#construccion{
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+}
+
+#construccion img{
+    width: 100%;
+}
+
 .caracteristicas a,
 .agregar a{
     color: #eff0f6;
     padding: 10px 16px;
+}
+
+.caracteristicas:hover{
+    background: #818e97;
+    transition: 200ms all ease;
+}
+
+.agregar:hover{
+    background-color: #5572d8;
+    transition: 200ms all ease;
 }
 
 .introduction{
@@ -117,10 +137,10 @@ main{
     border: 4px solid #23272a;
 }
 
-#main-btn{
+#main-btn {
     width: 100%;
     background: #2c2f33;
-    border-top: 2px solid #23272a;
+    border-top: 4px solid #23272a;
     margin-top: 30px;
     padding: 35px 0px;
 }
@@ -167,6 +187,10 @@ ul{
     padding: 0px 5px;
 }
 
+#construccion h2{
+    margin-top: 0px;
+}
+
 footer{
     background: #2c2f33;
     width: 100%;
@@ -174,8 +198,7 @@ footer{
     position: absolute;
 }
 
-/* COMPUTADOR PORTATIL */
-@media (max-width:1200px){
+@media (max-width: 2000px){
     #icon-header {
         float: left;
     }
@@ -187,6 +210,82 @@ footer{
     h1 {
         font-size: 24px;
         margin: 0.65em 0px 0px 10px;
+    }
+
+    main {
+    width: 40em;
+    background: #23272a;
+    margin: 0px auto;
+    }
+
+    #main-logo {
+        width: 36em;
+        position: absolute;
+        margin: 0px auto;
+        top: 8.5em;
+    }
+
+    .introduction p {
+        font-weight: 600;
+        font-size: 30px;
+    }
+
+    #main-logo {
+        width: 36em;
+        position: absolute;
+        margin: 0px auto;
+        top: 11em;
+    }
+
+    #main-lema {
+        width: 100%;
+        text-align: center;
+        background: #2c2f33;
+        height: 79px;
+    }
+
+    .btn {
+        width: 60%;
+        margin: 0px auto;
+        text-align: center;
+    }
+
+    .caracteristicas a, 
+    .agregar a {
+        color: #eff0f6;
+        padding: 10px 19%;
+        font-size: 26px;
+    }
+}
+
+/* COMPUTADOR PORTATIL */
+@media (max-width:1200px){
+    #icon-header {
+        float: left;
+    }
+
+    #construccion img {
+        width: 80%;
+    }
+
+    #construccion h2 {
+        margin-top: -50px;
+        display: block;
+    }
+
+    #text-header {
+        float: left;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin: 0.65em 0px 0px 10px;
+    }
+
+    .btn {
+        width: 76%;
+        margin: 0px auto;
+        text-align: center;
     }
 
     main {
@@ -221,7 +320,8 @@ footer{
         height: 79px;
     }
 
-    .caracteristicas a, .agregar a {
+    .caracteristicas a, 
+    .agregar a {
         color: #eff0f6;
         padding: 10px 26%;
         font-size: 26px;
@@ -233,6 +333,10 @@ footer{
 @media (max-width: 1024px){
     #text-header{
         float: right;
+    }
+
+    #construccion {
+        font-size: 2em;
     }
 
     main {
@@ -291,7 +395,9 @@ footer{
     color: #eff0f6;
     padding: 10px 37%;
     font-size: 17px;
-}
+    }
+
+
 }
 
 /* TABLETAS VERTICAL */
@@ -335,7 +441,28 @@ footer{
         margin-top: 30px;
         padding: 35px 0px 10px 0px;
     } 
+
+    #construccion {
+        font-size: 2.3em;
+    }
+
+    #construccion img{
+        width: 80%;
+    }
+
+    #construccion h2 {
+        margin-top: -50px;
+        display: block;
+    }
 } 
+
+@media (max-width:600px){
+    #construccion {
+        font-size: 2.3em;
+    }
+
+    
+}
 
 /* DISPOSITIVOS MOVILES HORIZONTAL */
 @media (max-width:480px){
@@ -377,7 +504,17 @@ footer{
         padding: 10px 8%;
         font-size: 23px;
     }
+
+    #construccion {
+        font-size: 2.3em;
+    }
 } 
+
+@media (max-width: 410px){
+    #construccion {
+        font-size: 2em;
+    }
+}
 
 @media (max-height: 410px){
     #footer-copy{
@@ -421,6 +558,10 @@ footer{
     footer{
         top: 80%;
     }
+
+    #construccion{
+        font-size: 1.7em;
+    }
 }
 
 @media (max-width: 296px){
@@ -450,11 +591,20 @@ footer{
     #main-lema {
         height: 70px;
     }
+
+    #construccion{
+        font-size: 1.6em;
+    }
 }
+
 
 @media (max-width: 266px){
     .introduction p{
         padding: 0px;
+    }
+
+    #construccion{
+        font-size: 1.5em;
     }
 }
 
