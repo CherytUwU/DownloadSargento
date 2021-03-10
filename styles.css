@@ -461,6 +461,14 @@ footer{
         font-size: 2.3em;
     }
 
+    #construccion img {
+        width: 100%;
+    }
+
+    #construccion h2{
+        margin-top: 0px;
+    }
+
     
 }
 
